@@ -17,7 +17,7 @@ const { Tools } = require("./../scrapping/tools");
 const sticker = new Sticker();
 const tools = new Tools();
 const apikeyAndLimit = require("../library/apikeyAndLimit");
-const creator = "Farhannnnn";
+const creator = "Reisuke > Deff";
 router = Router();
 
 router.get("/styletext", apikeyAndLimit, async (req, res) => {

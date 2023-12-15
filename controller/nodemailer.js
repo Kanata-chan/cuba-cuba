@@ -27,7 +27,7 @@ module.exports.sendMailPassword = (email, url) => {
 	mail.sendMail({
 		from: user,
 		to: email,
-		subject: "XCODERS API || CHANGE PASSWORD",
+		subject: "Reisuke API || CHANGE PASSWORD",
 		html: htmlPassword(url)
 	}, function (error, response) {
 		if (error) {

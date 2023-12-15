@@ -11,7 +11,7 @@ const { Ephoto } = require("./../scrapping/ephoto");
 const ephoto = new Ephoto();
 const apikeyAndLimit = require("../library/apikeyAndLimit");
 router = Router();
-const creator = "Farhannnnn";
+const creator = "Reisuke > Deff";
 
 
 router.get("/artistic", apikeyAndLimit, async (req, res) => {

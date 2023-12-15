@@ -42,7 +42,7 @@ let tokenize = new Array();
 
 router.get("/verify/:id", async (req, res, next) => {
 	let id = req.params.id;
-	await jwt.verify(id, jwtToken, async function (error, decoded) {
+	await jwt.verify(id, ACTIVATION_TOKEN_SECRET, async function (error, decoded) {
 		if (error) {
 			if (error.name === "TokenExpiredError") {
 				req.flash("error_msg", "Token Expired, Please Register Again");

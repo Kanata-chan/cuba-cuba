@@ -11,7 +11,7 @@ async function connectMongoDb() {
 	const db = await mongoose.connection;
 	db.on('error', console.error.bind(console, 'connection error:'));
 	db.once('open', () => {
-		console.log('[FXC7] Connect to DB success!');
+		console.log('Connect to MongoDB success!');
 	});
 }
 

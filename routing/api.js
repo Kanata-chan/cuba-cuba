@@ -7,7 +7,7 @@ const googlethis = require("googlethis");
 const moment = require("moment-timezone");
 const fs = require("fs");
 const router = express.Router();
-const creator = "Farhannnnn";
+const creator = "Reisuke > Deff";
 
 const apikeyAndLimit = require("../library/apikeyAndLimit");
 const { regexUrl, getBuffer, getJson, resSukses, resError, formatSize, loghandler } = require("../library/functions");
@@ -117,7 +117,7 @@ router.get("/download/gore", apikeyAndLimit, async (req, res) => {
 router.get("/download/joox", apikeyAndLimit, async (req, res) => {
 	const query = req.query.query;
 	if (!query) return res.json(loghandler.notquery);
-	await getJson(`https://api.chipa.xyz/api/download/joox?title=${encodeURIComponent(query)}&apikey=E562BWOTFNVGUG7W4DVDL5K3`)
+	await getJson(`https://api.betabotz.org/api/download/joox?title=${encodeURIComponent(query)}&apikey=Yuzuru`)
 		.then(({ result }) => {
 			if (!result instanceof Object) return res.json(loghandler.error);
 			let joox = {
