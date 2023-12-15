@@ -6,8 +6,9 @@ module.exports = {
 	limitCount: 1000,
 	limitPremium: 5000,
         expiredTokenDb: 3600,
-	dateLimit: "Oktober, 31 2028",
+	dateLimit: "Oktober, 31 2022",
 	profilePath: "/images/farhan.png",
+	
 	recaptchaKey: {
 		v2SiteKey: "6LdthJshAAAAAIvqTeddyZ-JU1GL_rpZENDX1vp6",
 		v2SecretKey: "6LdthJshAAAAAKMzmFW00qHWCAyJS1Gu_jpvkAvE",
